@@ -1,0 +1,33 @@
+
+#include <stdio.h>
+
+int main() {
+    int year;
+
+    printf("Enter a year: ");
+    scanf("%d", &year);
+
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                printf("%d is a leap year.\n", year);
+            } else {
+                printf("%d is not a leap year.\n", year);
+            }
+        } else {
+            printf("%d is a leap year.\n", year);
+        }
+    } else {
+        printf("%d is not a leap year.\n", year);
+    }
+
+    return 0;
+}
+In this program, the user is prompted to enter a year. The program then uses a series of if statements to check if the year is divisible by 4, 100, and 400. If the year is divisible by 4 but not by 100, it is a leap year. If the year is divisible by 100 but not by 400, it is not a leap year. If the year is divisible by 400, it is a leap year. The program then displays a message indicating whether the year is a leap year or not.
+
+
+
+
+
+
+ChatGPT Mar 14 Version. Free Research Preview. Our goal is to make AI systems mo
